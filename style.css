@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#title {
+  color: green;
+}
+
+.sub-title {
+  color: red;
+}
+
+h3 {
+  color: blue;
+}
+
+.first-container {
+  border: 1px solid red;
+  /* margin de 20px no topo e em baixo e 10px na direita e na esquerda */
+  margin: 20px 10px;
+  /* padding de 20px em todas as direções */
+  padding: 20px;
+}
+
+.second-container {
+  border: 1px solid blue;
+  /* top | left and right | bottom */
+  margin: 20px 8px 10px;
+  /* top | right | bottom | left */
+  padding: 20px 5px 10px 8px;
+}
+
+/*
+a ordem de declaração das distâncias é a mesma para margin e para padding
+*/
