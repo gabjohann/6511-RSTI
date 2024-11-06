@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #f2e9ff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img-box {
+  position: relative;
+  width: 100px;
+  height: 500px;
+  margin: 10px;
+  border-radius: 50px;
+
+  background: url(assets/carne.jpeg);
+  background-size: cover;
+  background-position: center;
+
+  transition: width 0.5s;
+}
+
+.img-box:nth-child(2) {
+  background: url(assets/frutas.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(3) {
+  background: url(assets/massa.webp);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box:nth-child(4) {
+  background: url(assets/panquecas.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.img-box p {
+  color: #000;
+  font-weight: 600;
+  position: absolute;
+  bottom: 0;
+  left: 30px;
+  visibility: hidden;
+}
+
+.img-box:hover {
+  width: 500px;
+  cursor: pointer;
+  transition: bottom 0.5s, visibility 0.5s;
+}
+
+.img-box:hover p {
+  visibility: visible;
+  bottom: 25px;
+}
