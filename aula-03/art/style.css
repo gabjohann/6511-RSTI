@@ -22,16 +22,26 @@ ul {
 }
 
 .container {
+  position: relative;
   width: 100%;
   height: 100vh;
-  /*   background: url("./assets/bg-img.png");
-  background-size: cover;
-  background-position: center; */
-  background: url("./assets/bg-img.png") center/cover;
-  filter: grayscale(20%);
-
-  /* top | left and right | bottom */
   padding: 26.5px 352px 80px;
+  background: url("./assets/bg-img.png") center/cover;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(26, 22, 21, 0.4);
+  z-index: 0;
+}
+
+.container > * {
+  /* Garante que o conteúdo seja posicionado acima da camada de filtro */
+  z-index: 1;
+  /* Coloca os elementos internos (como textos) acima do overlay */
+  position: relative;
 }
 
 .flex {
