@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --brand-color: #ffb904;
+  --dark: #0e0e0e;
+  --white: #ffffff;
+
+  --title-font: "Playfair", serif;
+  --body-font: "Inter", sans-serif;
+}
+
+body {
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  /*   background: url("./assets/bg-img.png");
+  background-size: cover;
+  background-position: center; */
+  background: url("./assets/bg-img.png") center/cover;
+  filter: grayscale(20%);
+
+  /* top | left and right | bottom */
+  padding: 26.5px 352px 80px;
+}
+
+.flex {
+  display: flex;
+}
+
+header nav {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-family: var(--title-font);
+}
+
+nav ul {
+  gap: 26px;
+  font-size: 20px;
+  font-family: var(--title-font);
+  text-transform: capitalize;
+}
