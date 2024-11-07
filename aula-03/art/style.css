@@ -11,6 +11,7 @@
 
   --title-font: "Playfair", serif;
   --body-font: "Inter", sans-serif;
+  --secondary-font: "Space Grotesk", sans-serif;
 }
 
 body {
@@ -21,11 +22,18 @@ ul {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
 .container {
   position: relative;
   width: 100%;
   height: 100vh;
-  padding: 26.5px 352px 80px;
+  padding: 26.5px 100px 80px;
   background: url("./assets/bg-img.png") center/cover;
 }
 
@@ -56,6 +64,7 @@ header nav {
 .logo {
   font-size: 24px;
   font-family: var(--title-font);
+  letter-spacing: 3%;
 }
 
 nav ul {
@@ -63,4 +72,105 @@ nav ul {
   font-size: 20px;
   font-family: var(--title-font);
   text-transform: capitalize;
+}
+
+main {
+  margin-top: 100px;
+  width: 100%;
+  max-width: 432px;
+}
+
+.title {
+  font-size: 96px;
+  font-family: var(--title-font);
+  line-height: 110%;
+  letter-spacing: 3%;
+}
+
+.description {
+  margin-top: 24px;
+  margin-bottom: 32px;
+  font-family: var(--body-font);
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.btn {
+  font-size: 24px;
+  font-family: var(--title-font);
+  color: var(--brand-color);
+
+  transition: opacity 0.3s ease-in-out;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 94px;
+}
+
+.left-section {
+  flex-direction: column;
+  gap: 57px;
+  position: relative;
+}
+
+.left-section:before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 3px;
+  top: 5px;
+  height: calc(100% + 50px);
+  border-left: 1px dashed white;
+}
+
+.artist {
+  position: relative;
+  padding-left: 24px;
+  font-size: 20px;
+  font-weight: var(--title-font);
+}
+
+.artist:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  position: absolute;
+  left: 0;
+  top: 5px;
+  border-radius: 10px;
+  background: white;
+}
+
+.artist:first-child:before {
+  background: var(--brand-color);
+}
+
+.left-section span {
+  font-size: 16px;
+  font-weight: 300;
+  font-family: var(--secondary-font);
+  margin-left: 10px;
+}
+
+.artist-name {
+  font-size: 32px;
+  font-family: var(--title-font);
+}
+
+.bio {
+  width: 100%;
+  max-width: 384px;
+  margin-top: 24px;
+  margin-bottom: 50px;
+  font-size: 20px;
+  font-family: var(--body-font);
+  line-height: 150%;
 }
