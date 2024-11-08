@@ -1,0 +1,76 @@
+/* Definindo o estilo básico para a página */
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f7f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Estilo da tabela */
+.container {
+  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Estilizando a tabela */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilo das células de cabeçalho */
+th {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+}
+
+/* Estilo das linhas da tabela */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Efeito de hover nas linhas */
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Estilo para os valores da última coluna */
+td:nth-child(5) {
+  font-weight: bold;
+  color: #ff5722;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  table {
+    font-size: 14px;
+  }
+  th,
+  td {
+    padding: 8px;
+  }
+}
