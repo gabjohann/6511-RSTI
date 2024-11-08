@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Aula 04</title>
+  </head>
+  <body>
+    <h1>Tabelas</h1>
+
+    <!-- títulos em linha -->
+    <table border="1">
+      <tr>
+        <td>Nome</td>
+        <td>Idade</td>
+        <td>Profissão</td>
+      </tr>
+
+      <tr>
+        <td>Lucas</td>
+        <td>22</td>
+        <td>Desenvolvedor Web</td>
+      </tr>
+
+      <tr>
+        <td>Gabriel</td>
+        <td>22</td>
+        <td>Professor de TI</td>
+      </tr>
+    </table>
+
+    <br />
+    <!-- quebra de linha -->
+
+    <!-- títulos em linha com uso de células -->
+    <table border="1">
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Profissão</th>
+      </tr>
+
+      <tr>
+        <td>Lucas</td>
+        <td>22</td>
+        <td>Desenvolvedor Web</td>
+      </tr>
+
+      <tr>
+        <td>Gabriel</td>
+        <td>22</td>
+        <td>Professor de TI</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- títulos em coluna -->
+    <table border="1">
+      <tr>
+        <th>Nome:</th>
+        <td>Lucas</td>
+        <td>Gabriel</td>
+        <td>Ted</td>
+      </tr>
+      <tr>
+        <th>Idade:</th>
+        <td>22</td>
+        <td>22</td>
+        <td>18</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- tabela semântica -->
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Título 1</th>
+          <th>Título 2</th>
+          <th>Título 3</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Body linha 1</td>
+          <td>Body linha 2</td>
+          <td>Body linha 3</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <td>Foot 1</td>
+        <td>Foot 2</td>
+        <td>Foot 3</td>
+      </tfoot>
+    </table>
+    <br />
+
+    <!-- tabela com linhas abrangendo mais colunas -->
+    <table border="1">
+      <tr>
+        <th>Nome</th>
+        <th colspan="2">Telefones</th>
+      </tr>
+      <tr>
+        <td>Ted</td>
+        <td>8888-8888</td>
+        <td>9999-9999</td>
+      </tr>
+      <tr>
+        <td>Junior</td>
+        <td>1111-1111</td>
+        <td>2222-2222</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- tabela com linhas abrangendo mais linhas -->
+    <table border="1">
+      <tr>
+        <th>Primeiro nome:</th>
+        <td>Ted</td>
+      </tr>
+      <tr>
+        <th rowspan="2">Telefones:</th>
+        <td>1111-1111</td>
+      </tr>
+      <tr>
+        <td>2222-2222</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- título na tabela -->
+    <table border="1">
+      <caption>
+        Exemplo de Título
+      </caption>
+      <tr>
+        <th>Nome</th>
+        <th>Sobrenome</th>
+      </tr>
+      <tr>
+        <td>Ted</td>
+        <td>Junior</td>
+      </tr>
+      <tr>
+        <td>Ted</td>
+        <td>Neto</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- agrupamento de colunas -->
+    <table border="1">
+      <colgroup>
+        <col class="red" />
+        <col class="yellow" />
+        <col class="blue" />
+      </colgroup>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Profissão</th>
+      </tr>
+      <tr>
+        <td>Ted</td>
+        <td>22</td>
+        <td>Estudante</td>
+      </tr>
+      <tr>
+        <td>Junior</td>
+        <td>28</td>
+        <td>Escritor</td>
+      </tr>
+    </table>
+
+    <br />
+
+    <!-- agrupamento de múltiplas colunas -->
+    <table border="1">
+      <colgroup>
+        <col span="2" class="red" />
+        <col class="blue" />
+      </colgroup>
+      <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Profissao</th>
+      </tr>
+      <tr>
+        <td>Ted</td>
+        <td>22</td>
+        <td>Estudante</td>
+      </tr>
+      <tr>
+        <td>Junior</td>
+        <td>26</td>
+        <td>Escritor</td>
+      </tr>
+    </table>
+  </body>
+</html>
