@@ -84,17 +84,6 @@
       <img src="assets/background.png" alt="" />
     </div>
 
-    <script>
-      function tooglePassword() {
-        document
-          .querySelectorAll(".eye")
-          .forEach((eye) => eye.classList.toggle("hide"));
-
-        const type =
-          password.getAttribute("type") == "password" ? "text" : "password";
-
-        password.setAttribute("type", type);
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
