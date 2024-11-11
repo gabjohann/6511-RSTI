@@ -9,6 +9,13 @@ function tooglePassword() {
   password.setAttribute("type", type);
 }
 
+/* verificar se o usuário está logado ao carregar a página */
+document.addEventListener("DOMContentLoaded", function () {
+  if (localStorage.getItem("isLoggedIn") === "true") {
+    window.location.href = "loggedUser.html";
+  }
+});
+
 document.querySelector("form").addEventListener("submit", function (event) {
   event.preventDefault(); // impedindo o comportamento padrão de reload
 
@@ -21,7 +28,10 @@ document.querySelector("form").addEventListener("submit", function (event) {
 
   /* verificar se o e-mail e senha enviados correspondem as credenciais setadas */
   if (emailInput === validEmail && passwordInput === validPassword) {
-    alert("Login bem-sucedido! Bem vindo à plataforma!");
+    /* armazenar no localStorage a informação de que o usuário está logado */
+    localStorage.setItem("isLoggedIn", "true");
+
+    window.location.href = "loggedUser.html";
   } else {
     alert("E-mail ou senha incorretos. Tente novamente!");
   }

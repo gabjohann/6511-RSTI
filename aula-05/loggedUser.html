@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="assets/min-icon.svg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Logged User</title>
+  </head>
+  <body>
+    <div id="page" class="flex">
+      <div>
+        <header>
+          <img src="assets/logo.svg" alt="vertigo" />
+        </header>
+        <main>
+          <div class="headline">
+            <h1>Bem vindo, usuário</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus corporis in voluptatibus?
+            </p>
+          </div>
+          <button class="logout-btn" onclick="logOut()">Sair</button>
+        </main>
+      </div>
+
+      <img src="assets/background.png" alt="" />
+    </div>
+
+    <script>
+      function logOut() {
+        document
+          .querySelector(".logout-btn")
+          .addEventListener("click", function () {
+            localStorage.removeItem("isLoggedIn");
+            window.location.href = "index.html";
+          });
+      }
+    </script>
+  </body>
+</html>

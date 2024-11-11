@@ -165,3 +165,13 @@ form button {
 form button:hover {
   background: #9f67ff;
 }
+
+.logout-btn {
+  font-weight: 700;
+
+  color: #ffffff;
+  background: #7c3aed;
+  padding: 1rem 2rem;
+  border-radius: 0.4rem;
+  margin-top: 1.6rem;
+}
