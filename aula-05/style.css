@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Titillium Web", serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+button {
+  all: unset;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #7c3aed;
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#page {
+  height: 100vh;
+}
+
+.flex {
+  display: flex;
+}
+
+#page > * {
+  width: 50%;
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+header img {
+  width: 16rem;
+}
+
+#page > div {
+  padding: 4rem 11.2rem;
+}
+
+main {
+  margin-top: 11.4rem;
+  max-width: 38.4rem;
+}
+
+.headline {
+  max-width: 35.1rem;
+}
+
+h1 {
+  font-size: 3.6rem;
+  color: #1e293b;
+  font-weight: 700;
+}
+
+h1 + p {
+  color: #475569;
+  margin-top: 1.6rem;
+}
+
+form {
+  margin-top: 4rem;
+}
+
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper + .input-wrapper {
+  margin-top: 1.6rem;
+}
+
+label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.label-wrapper {
+  justify-content: space-between;
+}
+
+.label-wrapper label + a {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+input {
+  width: 100%;
+
+  background-color: #ffffff;
+  border: 0.1rem solid #e2e8f0;
+  border-radius: 0.4rem;
+
+  margin-top: 0.8rem;
+  padding: 1.6rem 1.2rem;
+
+  font-size: 1.4rem;
+  color: #94a3b8;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}
+
+input:focus,
+input:hover {
+  border: 0.1rem solid #7c3aed;
+  outline: none;
+}
+
+input:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  border: 0.1rem solid #e2e8f0;
+}
+
+.eye {
+  width: 2rem;
+  height: 2rem;
+
+  position: absolute;
+  top: 55%;
+  right: 5%;
+}
+
+.hide {
+  display: none;
+}
+
+form button {
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+
+  margin-block: 3.2rem;
+  padding: 1.6rem 0;
+
+  background: #7c3aed;
+  border-radius: 0.4rem;
+
+  color: #ffffff;
+  font-weight: 700;
+
+  transition: background-color 0.2s ease-in-out;
+}
+
+form button:hover {
+  background: #9f67ff;
+}
