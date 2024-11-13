@@ -36,6 +36,8 @@
 button {
   all: unset;
   box-sizing: border-box;
+
+  cursor: pointer;
 }
 
 ul {
@@ -202,6 +204,13 @@ header div {
   top: -10%;
   left: 50%;
   transform: translateX(-50%);
+
+  width: 12rem;
+  height: 12rem;
+}
+
+.label-wrapper {
+  align-items: center;
 }
 
 .label {
@@ -210,8 +219,8 @@ header div {
 
   padding: 0.4rem 0.8rem;
 
-  color: var(--yellow-light);
-  background-color: var(--yellow-dark);
+  color: var(--yellow-dark);
+  background-color: var(--yellow-light);
   border-radius: 10rem;
 
   font-size: 1rem;
@@ -226,6 +235,8 @@ header div {
   font-family: var(--title-font);
   text-transform: capitalize;
   padding-bottom: 0.8rem;
+
+  text-align: center;
 }
 
 .coffee-description {
@@ -257,6 +268,25 @@ header div {
 .btn-wrapper div {
   display: flex;
   gap: 1.2rem;
+}
+
+.coffee-amount {
+  align-items: center;
+
+  background-color: var(--base-button);
+  padding: 0.85rem 0.8rem;
+  border-radius: 6px;
+
+  & span {
+    color: var(--base-title);
+    font-size: 1.6rem;
+  }
+}
+
+.amount-btn {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--purple);
 }
 
 /* scrollbar */
