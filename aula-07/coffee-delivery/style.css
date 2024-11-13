@@ -183,12 +183,13 @@ header div {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 32px;
-  grid-row-gap: 40px;
+  grid-column-gap: 3.2rem;
+  grid-row-gap: 4rem;
   padding-top: 5.4rem;
 }
 
 .coffe-card {
+  width: 25.6rem;
   position: relative;
 
   border-radius: 0.6rem 3.6rem;
@@ -275,7 +276,7 @@ header div {
 
   background-color: var(--base-button);
   padding: 0.85rem 0.8rem;
-  border-radius: 6px;
+  border-radius: 0.6rem;
 
   & span {
     color: var(--base-title);
@@ -294,7 +295,7 @@ header div {
 body {
   --sb-track-color: #8d8686;
   --sb-thumb-color: #403937;
-  --sb-size: 8px;
+  --sb-size: 0.8rem;
 }
 
 body::-webkit-scrollbar {
@@ -303,12 +304,12 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-track {
   background: var(--sb-track-color);
-  border-radius: 2px;
+  border-radius: 0.2rem;
 }
 
 body::-webkit-scrollbar-thumb {
   background: var(--sb-thumb-color);
-  border-radius: 2px;
+  border-radius: 0.2rem;
 }
 
 @supports not selector(::-webkit-scrollbar) {
