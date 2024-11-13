@@ -83,14 +83,20 @@ header div {
 }
 
 .shopping-btn {
+  color: var(--base-card);
+  background-color: var(--purple-dark);
+
   padding: 0.8rem;
-  color: var(--yellow-dark);
-  background-color: var(--yellow-light);
   border-radius: 0.6rem;
 
   & i {
     font-size: 2.2rem;
   }
+}
+
+#header-shopping-btn {
+  color: var(--yellow-dark);
+  background-color: var(--yellow-light);
 }
 
 .s-about {
