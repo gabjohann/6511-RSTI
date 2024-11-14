@@ -1,0 +1,125 @@
+@import url("./style.css");
+
+.s-user-data h1,
+.s-order h1 {
+  font-size: 1.8rem;
+  font-family: var(--title-font);
+  color: var(--base-subtitle);
+
+  padding-bottom: 1.5rem;
+}
+
+.s-user-data .user-address,
+.payment-method {
+  width: 64rem;
+  background-color: var(--base-card);
+  border-radius: 0.6rem;
+  padding: 4rem;
+
+  flex-direction: column;
+}
+
+.title {
+  color: var(--base-subtitle);
+  font-size: 1.6rem;
+
+  align-items: center;
+  gap: 0.8rem;
+
+  padding-bottom: 0.2rem;
+}
+
+#map-pin-icon {
+  color: var(--yellow-dark);
+  font-size: 2.2rem;
+}
+
+.subtitle {
+  color: var(--base-text);
+  font-size: 1.4rem;
+
+  padding-left: 3rem;
+  padding-bottom: 3.2rem;
+}
+
+.input-wrapper {
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+input {
+  outline: none;
+  background-color: var(--base-input);
+  border: 1px solid var(--base-button);
+  border-radius: 0.4rem;
+  padding: 1.2rem;
+}
+
+input::placeholder {
+  color: var(--base-label);
+  font-size: 1.4rem;
+}
+
+.zip-code-input,
+.number-input {
+  width: 20rem;
+}
+
+.street,
+.complement-input {
+  flex-grow: 1;
+}
+
+.number-input {
+  margin-right: 1.2rem;
+}
+
+.addres-details {
+  gap: 1.2rem;
+}
+
+.addres-details .district-input {
+  width: 20rem;
+}
+
+.addres-details .city-input {
+  width: 27.8rem;
+}
+
+.s-user-data .payment-method {
+  margin-top: 1.2rem;
+}
+
+#currency-dollar-icon {
+  color: var(--purple);
+  font-size: 2.2rem;
+}
+
+.button-wrapper {
+  gap: 1.2rem;
+}
+
+.payment-method-btn {
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;
+
+  /* top | right | bottom | left */
+  padding: 1.6rem 0 1.6rem 1.6rem;
+  width: 17.867rem;
+
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: var(--base-text);
+  background-color: var(--base-button);
+  border-radius: 0.6rem;
+}
+
+.payment-method-btn i {
+  color: var(--purple);
+  font-size: 1.6rem;
+}
+
+.s-order {
+  margin-top: 1.5rem;
+}

@@ -145,6 +145,7 @@ footer {
   position: absolute;
   left: 0;
   top: 5px;
+  transform: translateX(-20%);
   border-radius: 10px;
   background: white;
 }
