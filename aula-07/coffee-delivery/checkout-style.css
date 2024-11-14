@@ -121,5 +121,118 @@ input::placeholder {
 }
 
 .s-order {
-  margin-top: 1.5rem;
+  margin: 3rem 0;
+}
+
+.selected-coffees {
+  width: 44.8rem;
+  padding: 4rem;
+  border-radius: 0.6rem 4.4rem;
+  background-color: var(--base-card);
+
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.selected-coffe {
+  gap: 2rem;
+}
+
+.selected-coffe img {
+  width: 6.4rem;
+  height: 6.4rem;
+}
+
+.coffee-details {
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.coffee-details p {
+  font-size: 1.6rem;
+  color: var(--base-subtitle);
+  text-transform: capitalize;
+}
+
+#btn-wrapper {
+  gap: 0.8rem;
+}
+
+.delete-btn {
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.8rem;
+
+  border-radius: 0.6rem;
+  background-color: var(--base-button);
+
+  color: var(--base-text);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.delete-btn i {
+  font-size: 1.6rem;
+  color: var(--purple);
+}
+
+.selected-coffe strong {
+  font-size: 1.6rem;
+  color: var(--base-text);
+
+  padding-left: 5rem;
+}
+
+hr {
+  border: 1px solid var(--base-button);
+  margin: 2.4rem 0;
+}
+
+.price {
+  flex-direction: column;
+  gap: 1.35rem;
+}
+
+.price div {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.total-itens,
+.delivery {
+  color: var(--base-text);
+  text-transform: capitalize;
+
+  & p {
+    font-size: 1.4rem;
+  }
+
+  & span {
+    font-size: 1.6rem;
+  }
+}
+
+.total {
+  color: var(--base-subtitle);
+  text-transform: capitalize;
+
+  & p,
+  & span {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.submit-btn {
+  margin-top: 2.4rem;
+  padding: 1.2rem 0;
+  border-radius: 0.6rem;
+  background-color: var(--yellow);
+
+  font-size: 1.4rem;
+  color: var(--white);
+  text-align: center;
+  text-transform: uppercase;
 }

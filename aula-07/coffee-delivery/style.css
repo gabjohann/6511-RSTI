@@ -279,6 +279,7 @@ header div {
 
 .coffee-amount {
   align-items: center;
+  gap: 0.4rem;
 
   background-color: var(--base-button);
   padding: 0.85rem 0.8rem;
