@@ -1,5 +1,13 @@
 @import url("./style.css");
 
+#logo {
+  cursor: pointer;
+}
+
+#logo:hover {
+  opacity: 0.8;
+}
+
 .s-user-data h1,
 .s-order h1 {
   font-size: 1.8rem;

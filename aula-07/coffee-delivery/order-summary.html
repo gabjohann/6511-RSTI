@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="order-summary-style.css" />
+
+    <!-- phosphor icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <title>Coffee Delivery - Order Summary</title>
+  </head>
+  <body>
+    <header class="container flex">
+      <img src="assets/logo.svg" alt="coffe delivery" id="logo" />
+
+      <div class="flex">
+        <button type="button" class="location-btn flex">
+          <i class="ph-fill ph-map-pin"></i>
+
+          <span>Porto Alegre, RS</span>
+        </button>
+        <button type="button" class="shopping-btn" id="header-shopping-btn">
+          <i class="ph-fill ph-shopping-cart-simple"></i>
+        </button>
+      </div>
+    </header>
+
+    <main class="container flex">
+      <div class="flex content">
+        <h1>Uhu! Pedido confirmado</h1>
+        <p>Agora é só aguardar que logo o café chegará até você</p>
+
+        <div class="summary">
+          <ul>
+            <li>
+              <i class="ph-fill ph-map-pin"></i>
+              <div class="flex">
+                <p>
+                  Entrega em
+                  <strong>Rua João Daniel Martinelli, 102</strong>
+                </p>
+                <p>Farrapos - Porto Alegre, RS</p>
+              </div>
+            </li>
+            <li>
+              <i class="ph-fill ph-timer"></i>
+              <div class="flex">
+                <p>Previsão de entrega</p>
+                <strong>20 min - 30 min </strong>
+              </div>
+            </li>
+            <li>
+              <i class="ph ph-currency-dollar"></i>
+              <div class="flex">
+                <p>Pagamento na entrega</p>
+                <strong>Cartão de Crédito</strong>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="ilustration">
+        <img src="assets/order-summary.svg" alt="" />
+      </div>
+    </main>
+
+    <script src="./main.js"></script>
+  </body>
+</html>

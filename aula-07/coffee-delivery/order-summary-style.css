@@ -1,0 +1,91 @@
+@import url("./style.css");
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 130%;
+  font-weight: 800;
+  font-family: var(--title-font);
+
+  color: var(--yellow-dark);
+
+  padding-top: 8rem;
+  padding-bottom: 0.4rem;
+}
+
+p {
+  font-size: 2rem;
+  line-height: 130%;
+
+  color: var(--base-subtitle);
+}
+
+.content {
+  display: flex;
+}
+
+.summary {
+  width: 52.6rem;
+  border-radius: 0.6rem 3.6rem;
+  border-width: 0.1rem;
+  border-style: solid;
+  border-image: linear-gradient(
+    to right,
+    rgba(219, 172, 44, 1) 0%,
+    rgba(128, 71, 248, 1) 100%
+  );
+  padding: 4rem 13.2rem 4rem 4rem;
+}
+
+.summary ul li {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.summary ul li p {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.summary ul li p,
+.summary ul li p strong,
+.summary ul li strong {
+  font-size: 1.6rem;
+  color: var(--base-text);
+}
+
+.summary div {
+  flex-direction: column;
+}
+
+.summary ul li {
+  color: white;
+}
+
+.summary ul li i {
+  padding: 0.8rem;
+  border-radius: 50%;
+
+  font-size: 1.6rem;
+}
+
+.summary ul li:first-child i {
+  background-color: var(--purple);
+}
+
+.summary ul li:nth-child(2) i {
+  background-color: var(--yellow);
+}
+
+.summary ul li:nth-child(2) {
+  padding: 3.2rem 0;
+}
+
+.summary ul li:nth-child(3) i {
+  background-color: var(--yellow-dark);
+}
+
+.ilustration {
+  padding-top: 18rem;
+}
