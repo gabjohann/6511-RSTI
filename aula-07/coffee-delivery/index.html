@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -11,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
-
     <link rel="stylesheet" href="style.css" />
 
     <!-- phosphor icons -->
@@ -20,12 +18,10 @@
   </head>
   <body>
     <header class="container flex">
-      <img src="assets/logo.svg" alt="coffe delivery" />
-
+      <img src="assets/logo.svg" alt="coffee delivery" id="logo" />
       <div class="flex">
         <button type="button" class="location-btn flex">
           <i class="ph-fill ph-map-pin"></i>
-
           <span>Porto Alegre, RS</span>
         </button>
         <button
@@ -76,9 +72,9 @@
         <h1>Nossos cafés</h1>
 
         <div class="coffee-gallery">
-          <div class="coffe-card flex">
+          <!-- Café Tradicional -->
+          <div class="coffe-card flex" data-id="tradicional">
             <img src="assets/tradicional.png" alt="café tradicional" />
-
             <span class="label">tradicional</span>
 
             <div class="description">
@@ -95,16 +91,16 @@
                 <div class="coffee-amount flex">
                   <button
                     type="button"
-                    id="decrement"
                     class="decrement-btn amount-btn"
+                    data-id="tradicional"
                   >
                     -
                   </button>
-                  <span id="counter">1</span>
+                  <span id="counter-tradicional" data-id="tradicional">1</span>
                   <button
                     type="button"
-                    id="increment"
                     class="increment-btn amount-btn"
+                    data-id="tradicional"
                   >
                     +
                   </button>
@@ -116,9 +112,9 @@
             </div>
           </div>
 
-          <div class="coffe-card flex">
+          <!-- Café Americano -->
+          <div class="coffe-card flex" data-id="americano">
             <img src="assets/americano.png" alt="café expresso americano" />
-
             <span class="label">tradicional</span>
 
             <div class="description">
@@ -135,16 +131,16 @@
                 <div class="coffee-amount flex">
                   <button
                     type="button"
-                    id="decrement"
                     class="decrement-btn amount-btn"
+                    data-id="americano"
                   >
                     -
                   </button>
-                  <span id="counter">1</span>
+                  <span id="counter-americano" data-id="americano">1</span>
                   <button
                     type="button"
-                    id="increment"
                     class="increment-btn amount-btn"
+                    data-id="americano"
                   >
                     +
                   </button>
@@ -156,12 +152,12 @@
             </div>
           </div>
 
-          <div class="coffe-card flex">
+          <!-- Café Expresso Cremoso -->
+          <div class="coffe-card flex" data-id="cremoso">
             <img
               src="assets/expresso-cremoso.png"
-              alt="café expresso tradicional"
+              alt="café expresso cremoso"
             />
-
             <span class="label">tradicional</span>
 
             <div class="description">
@@ -178,16 +174,16 @@
                 <div class="coffee-amount flex">
                   <button
                     type="button"
-                    id="decrement"
                     class="decrement-btn amount-btn"
+                    data-id="cremoso"
                   >
                     -
                   </button>
-                  <span id="counter">1</span>
+                  <span id="counter-cremoso" data-id="cremoso">1</span>
                   <button
                     type="button"
-                    id="increment"
                     class="increment-btn amount-btn"
+                    data-id="cremoso"
                   >
                     +
                   </button>
@@ -199,9 +195,9 @@
             </div>
           </div>
 
-          <div class="coffe-card flex">
+          <!-- Café Expresso Gelado -->
+          <div class="coffe-card flex" data-id="gelado">
             <img src="assets/gelado.png" alt="café expresso gelado" />
-
             <div class="label-wrapper flex">
               <span class="label">tradicional</span>
               <span class="label">gelado</span>
@@ -221,16 +217,16 @@
                 <div class="coffee-amount flex">
                   <button
                     type="button"
-                    id="decrement"
                     class="decrement-btn amount-btn"
+                    data-id="gelado"
                   >
                     -
                   </button>
-                  <span id="counter">1</span>
+                  <span id="counter-gelado" data-id="gelado">1</span>
                   <button
                     type="button"
-                    id="increment"
                     class="increment-btn amount-btn"
+                    data-id="gelado"
                   >
                     +
                   </button>
@@ -246,5 +242,6 @@
     </main>
 
     <script src="./main.js"></script>
+    <script src="order.js"></script>
   </body>
 </html>
