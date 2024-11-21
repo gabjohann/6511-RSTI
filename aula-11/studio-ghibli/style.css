@@ -162,13 +162,20 @@ main p {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1000px) {
   main {
+    width: 121.6rem;
+
     flex-direction: row-reverse;
+    align-items: center;
     justify-content: center;
   }
 
   main img {
     width: 57.4rem;
+  }
+
+  main div {
+    width: 50.2rem;
   }
 }
