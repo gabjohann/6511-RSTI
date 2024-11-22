@@ -1,0 +1,16 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input {
+  outline: none;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
