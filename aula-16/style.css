@@ -25,6 +25,11 @@ ul {
   list-style: none;
 }
 
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
 .flex {
   display: flex;
   align-items: center;
@@ -80,7 +85,7 @@ ul {
 }
 
 .text-data .name {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   font-weight: 500;
 }
 
@@ -97,10 +102,17 @@ ul {
   width: 3.4rem;
   height: 3.4rem;
   justify-content: center;
-  color: var(--white);
+
   font-size: 1.8rem;
   border-radius: 50%;
   margin: 0 0.8rem;
+
+  transition: all 0.3s ease-in-out;
+}
+
+.media-buttons .link :hover {
+  scale: 1.1;
+  opacity: 0.8;
 }
 
 #facebook {
@@ -159,4 +171,8 @@ ul {
 .data i {
   font-size: 1.8rem;
   margin-right: 0.6rem;
+}
+
+.data span {
+  font-size: 0.8rem;
 }

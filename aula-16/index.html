@@ -20,26 +20,38 @@
   <body>
     <div class="profile-card flex">
       <div class="image">
-        <img src="" alt="" class="profile-image" />
+        <img
+          src="https://github.com/gabjohann.png"
+          alt=""
+          class="profile-image"
+        />
       </div>
 
       <div class="text-data flex">
-        <h1 class="name"></h1>
-        <p class="bio"></p>
+        <h1 class="name" id="name"></h1>
+        <p class="bio" id="bio"></p>
       </div>
 
       <ul class="media-buttons flex">
         <li class="link flex" id="facebook">
-          <i class="ph ph-facebook-logo"></i>
+          <a href="" target="_blank" class="flex">
+            <i class="ph ph-facebook-logo"></i>
+          </a>
         </li>
         <li class="link flex" id="twitter">
-          <i class="ph ph-x-logo"></i>
+          <a href="" target="_blank" class="flex">
+            <i class="ph ph-x-logo"></i>
+          </a>
         </li>
         <li class="link flex" id="instagram">
-          <i class="ph ph-instagram-logo"></i>
+          <a href="https://instagram.com/" target="_blank" class="flex">
+            <i class="ph ph-instagram-logo"></i>
+          </a>
         </li>
         <li class="link flex" id="youtube">
-          <i class="ph ph-youtube-logo"></i>
+          <a href="" target="_blank" class="flex">
+            <i class="ph ph-youtube-logo"></i>
+          </a>
         </li>
       </ul>
 
@@ -49,9 +61,17 @@
       </div>
 
       <ul class="analytics flex">
-        <li class="data flex"><i class="ph ph-heart"></i>seguidores</li>
-        <li class="data flex"><i class="ph ph-archive"></i>repos</li>
-        <li class="data flex"><i class="ph ph-git-pull-request"></i>gist</li>
+        <li class="data flex">
+          <i class="ph ph-heart"></i>
+          <span id="followers"></span>
+        </li>
+        <li class="data flex">
+          <i class="ph ph-archive"></i> <span id="repos"></span>
+        </li>
+        <li class="data flex">
+          <i class="ph ph-git-pull-request"> </i>
+          <span id="gists"></span>
+        </li>
       </ul>
     </div>
 
