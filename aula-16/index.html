@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Profile Card</title>
+  </head>
+  <body>
+    <div class="profile-card flex">
+      <div class="image">
+        <img src="" alt="" class="profile-image" />
+      </div>
+
+      <div class="text-data flex">
+        <h1 class="name"></h1>
+        <p class="bio"></p>
+      </div>
+
+      <ul class="media-buttons flex">
+        <li class="link flex" id="facebook">
+          <i class="ph ph-facebook-logo"></i>
+        </li>
+        <li class="link flex" id="twitter">
+          <i class="ph ph-x-logo"></i>
+        </li>
+        <li class="link flex" id="instagram">
+          <i class="ph ph-instagram-logo"></i>
+        </li>
+        <li class="link flex" id="youtube">
+          <i class="ph ph-youtube-logo"></i>
+        </li>
+      </ul>
+
+      <div class="contact-buttons flex">
+        <button type="button">Website</button>
+        <button type="button">Message</button>
+      </div>
+
+      <ul class="analytics flex">
+        <li class="data flex"><i class="ph ph-heart"></i>seguidores</li>
+        <li class="data flex"><i class="ph ph-archive"></i>repos</li>
+        <li class="data flex"><i class="ph ph-git-pull-request"></i>gist</li>
+      </ul>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
