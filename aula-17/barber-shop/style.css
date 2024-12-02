@@ -149,7 +149,7 @@ body {
 }
 
 .logo-alt span {
-  color: var(--text-color);
+  color: var(--background-color);
 }
 
 /* navigation */
@@ -322,7 +322,7 @@ nav.show div.icon-close {
   width: 100%;
   height: 100%;
   background: var(--primary-color);
-  top: -8.3%;
+  top: -16%;
   left: -33%;
   z-index: 0;
 }
@@ -476,13 +476,13 @@ footer .logo {
 }
 
 footer .brand p {
-  color: var(--text-color);
+  color: var(--white);
   margin-bottom: 0.75rem;
 }
 
 footer i {
   font-size: 1.5rem;
-  color: var(--text-color);
+  color: var(--white);
 }
 
 footer .social {
@@ -599,7 +599,6 @@ footer .social a:hover {
 
   /* about */
   #about .container {
-    margin: 0 auto;
     grid-auto-flow: column;
   }
 
