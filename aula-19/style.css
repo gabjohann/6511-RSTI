@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+
+  --blue: #0156ff;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.container {
+  padding-left: 26rem;
+  padding-right: 26rem;
+}
+
+header {
+  height: 9.2rem;
+}
+
+header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header nav ul {
+  display: flex;
+  align-items: center;
+
+  font-weight: 600;
+}
+
+.filter {
+  gap: 2.5rem;
+  font-size: 14px;
+}
+
+.about-btn {
+  border-radius: 5rem;
+  border: 0.2rem solid var(--blue);
+  padding: 0.8rem 2.6rem;
+
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: var(--blue);
+  margin-left: 2.5rem;
+}
+
+.btn-wrapper {
+  padding-left: 17.3rem;
+  gap: 2.5rem;
+}
+
+.profile-img {
+  width: 3.6rem;
+  height: 3.6rem;
+  clip-path: circle();
+}
+
+.product-grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.product-card {
+  width: 23.4rem;
+  height: 34.6rem;
+
+  padding: 2.6rem;
+}
+
+.product-img {
+  width: 15rem;
+  height: 15rem;
+
+  margin: 0 auto;
+}
+
+.product-img img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.rating {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+}
+
+.rating li:last-child {
+  font-size: 1.2rem;
+  line-height: 210%;
+  padding-left: 0.916rem;
+  color: #a2a6b0;
+}
+
+.product-name {
+  font-size: 1.4rem;
+  font-weight: 400;
+
+  padding-bottom: 2rem;
+}
+
+.loading-message {
+  font-size: 2rem;
+}
